@@ -16,10 +16,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     
     
 
-
-
-
-
 changeColorBtn.addEventListener('click',()=>{
 let randomColor;
 do{
@@ -33,6 +29,18 @@ localStorage.setItem('newColor',randomColor);
 lastColor=randomColor;
 
 });
+
+
+if(resetColorBtn){
+resetColorBtn.addEventListener('click',()=>{
+
+document.body.style.background="#ffffff";
+localStorage.removeItem('newColor')
+
+
+})
+
+}
 
 
 
