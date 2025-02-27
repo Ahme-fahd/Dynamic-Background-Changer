@@ -1,5 +1,5 @@
 let changeColorBtn=document.getElementById('changeColorBtn');
-lastColor=null;
+let lastColor=null;
 
 document.addEventListener('DOMContentLoaded',()=>{
 
